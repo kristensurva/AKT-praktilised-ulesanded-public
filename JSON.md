@@ -1,7 +1,7 @@
 # Mis on JSON
 JSON (**J**ava**S**cript **O**bject **N**otation) on universaalselt kasutusel olev tekstipõhine andmevahetusformaat. JSON põhineb küll JavaScripti objekt süntaksil kuid on kasutatav kõikjal.
 
-JSON-it kasutatake väga tihti veebirakendustes, näiteks kliendi ja serveri vahel info edastamiseks.
+JSON-it kasutatakse väga tihti veebirakendustes, näiteks kliendi ja serveri vahel info edastamiseks.
 
 ## JSON struktuur
 JSON koosneb võtmete ja väärtuste paaridest (nagu Java `HashMap` ja Pythoni `Dictionary`). Väärtused võivad olla:
@@ -148,7 +148,7 @@ Selleks peame esiteks parsima JSON-i `JsonObject`'iks.
 String jsonString = Files.readString(Paths.get("input.json")); // Input faili sisu sama mis enne
 JsonObject jsonTree = JsonParser.parseString(jsonString).getAsJsonObject();
 ```
-Paneme tähele, et tahame individuaalseid atribuute JSON-ist kätte saada, ja selle jaoks on vaja käsitleda `JsonObject` tüüpi, mitte `JsonElement` tüüpi. Kuna `parseString` tagastab`JsonElement` tüübi, siis peame kutsuma sellel veel `.getAsJsonObject` meetodit.
+Paneme tähele, et tahame individuaalseid atribuute JSON-ist kätte saada, ja selle jaoks on vaja käsitleda `JsonObject` tüüpi, mitte `JsonElement` tüüpi. Kuna `parseString` tagastab `JsonElement` tüübi, siis peame kutsuma sellel veel `.getAsJsonObject` meetodit.
 
 Peale seda on võimalik kõiki atribuute käsitleda lihtsalt nende atribuutide nimede kaudu, kasutades `get` meetodit. Näiteks kui tahame saada tudengi eesnime ja kursuseid kätte, saame seda teha järgnevalt:
 ```java

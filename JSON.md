@@ -4,7 +4,7 @@ JSON (**J**ava**S**cript **O**bject **N**otation) on universaalselt kasutusel 
 JSON-it kasutatake väga tihti veebirakendustes, näiteks kliendi ja serveri vahel info edastamiseks.
 
 ## JSON struktuur
-JSON koosneb võtmete ja väärtuste paaridest (nagu Java HashMap ja Pythoni Dictionary). Väärtused võivad olla:
+JSON koosneb võtmete ja väärtuste paaridest (nagu Java `HashMap` ja Pythoni `Dictionary`). Väärtused võivad olla:
 * Numbrid
 * Tõeväärtused
 * Stringid
@@ -28,7 +28,7 @@ Näide ühest JSON'ist, kus on kasutatud kõiki väärtuse tüüpe:
 }
 ```
 # GSON
-Selle kodutöö piires õpime GSON-i. GSON on Google poolt loodud lihtne teek JSON-i parsimiseks.
+Selle kodutöö piires õpime GSON-i. GSON on Google poolt loodud teek JSON-i parsimiseks.
 
 ## Setup
 Impordime dependency Gradle kaudu.
